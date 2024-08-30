@@ -8,7 +8,6 @@ app = Flask(__name__)
 CORS(app)  # This allows our frontend to make requests to this backend
 
 CSV_FILE = 'aiml_club_signups.csv'
-
 def init_csv():
     if not os.path.exists(CSV_FILE):
         with open(CSV_FILE, 'w', newline='') as file:
